@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainname{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 35px;
+    color: chocolate;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.nav .bar1{
+    text-align: center;
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.452);
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(27, 1, 27);
+    border-radius: 15px;
+    font-family: "Roboto", sans-serif;
+    transition: 0.4s;
+}
+.nav .bar1:hover{
+    color: chocolate;
+    box-shadow:inset 0 0 12px white;
+    flex-grow: 3;
+}
+.cebox{
+    max-width: 1200px;
+    padding: 15px;
+    margin: 20px auto;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.486);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cebox .leftbox{
+    width: 300px;
+    margin: 0 10px;
+}
+.cebox .rightbox{
+    width: 750px;
+    margin: 0 10px;
+}
+.leftbox .img{
+    margin: 10px 0;
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+}
+.leftbox .img img{
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+.leftbox  p{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+.leftbox i{
+    color: chocolate;
+    margin: 0 5px;
+}
+.leftbox  p span{
+    color: chocolate;
+    font-weight: bolder;
+}
+.rightbox h3{
+    margin: 15px 0;
+    color: chocolate;
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+.rightbox p{
+    font-size: 23px;
+    text-align: justify;
+    text-indent: 25px;
+}
+.vision{
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.486);
+}
+.leftb{
+    width: 550px;
+}
+.leftb h3{
+    color: chocolate;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 15px 0;
+}
+.leftb p{
+    font-size: 20px;
+    text-align: center;
+}
+.leftb ul li{
+    text-align: left;
+    font-size: 20px;
+    margin: 5px 0;
+    text-indent: 15px;
+    list-style:circle ;
+}

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AIT | OFFICIAL</title>
+  <link rel="stylesheet" href="stymain.css"/>
+  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/5a4662180c.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="pictures/logoo.jpeg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="leftfixed">
+    
+      <button class="img1 btn" id="lfi1" id="grav" onclick="openForm1()">
+        <i class="fas fa-users"></i>
+        <p class="icname">Admission</p>
+      </button>
+    
+    <a href="https://youtu.be/ZMacJoMsrNA">
+      <div class="img1" id="lfi2">
+        <i class="fas fa-quote-left"></i>
+        <p class="icname">Testimonials</p>
+      </div>
+    </a>
+    <a href="https://www.google.com/maps/place/AIT+College+Ground/@23.1114582,72.5197541,18a,49.5y/data=!3m8!1e2!3m6!1sAF1QipMF1qYvOtTdaf4GgBdD_VwJWt6-GxLfTPTpaK6E!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipMF1qYvOtTdaf4GgBdD_VwJWt6-GxLfTPTpaK6E%3Dw203-h152-k-no!7i4608!8i3456!4m5!3m4!1s0x395e9d2d2a133ea3:0x975bbc9580b7eed6!8m2!3d23.1114582!4d72.5202008">
+      <div class="img1" id="lfi3">
+        <i class="fas fa-street-view"></i>
+        <p class="icname">360<span>&#176; </span>vision</p>
+      </div>
+    </a> 
+    <a href="https://drive.google.com/file/d/1QNG6N-p7i16Q6kzczYAkQ0vQUwkMNN7w/view?usp=sharing">
+      <div class="img1" id="lfi4">
+        <i class="far fa-file-pdf"></i>
+        <p class="icname">Brochure</p>
+      </div>
+    </a> 
+  </div>
+  <div class="header">
+    <div class="aitLogo">
+      <img
+        src="pictures/logoo.jpeg"
+        alt="" />
+    </div>
+    <div class="rightCont">
+      <h1 class="Ait">AHMEDABAD INSTITUTE OF TECHNOLOGY</h1>
+      <div class="group1">
+        <p class="group1Ele">EST2004 | AICTE APPROVED | GTU AFFILIATED</p>
+        <div class="btns">
+          <button class="btn" id="myBtn">PAY FEES</button>
+          
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Pay Fees</h2>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <p>Please select from following:</p>
+                    <input type="radio" name="gender" value="male" class="sem">Third sem<br>
+                    <input type="radio" name="gender" value="female"class="sem">fifth sem<br>
+                    <input type="radio" name="gender" value="other" class="sem">Seventh sem
+                  <div class="sem">
+                    <input type="submit" value="Submit" class="btn">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            
+        </div>
+        <div class="btns">
+          <button class="btn" id="grav" onclick="openForm()">GRIEVANCE</button>
+          <div class="form-popup" id="myForm">
+            <form action="" class="form-container">
+              <h2>Login</h2>
+          
+              <label for="email"><b>User Name</b></label>
+              <input type="text" placeholder="Username" name="email" required>
+          
+              <label for="psw"><b>Email</b></label>
+              <input type="email" placeholder="Email" name="psw" required>
+              
+              <label for="psw"><b>Grievance</b></label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+        </div>
+        <div class="btns">
+          <button class="btn" onclick="openForm1()">ADMISSI0N</button>
+          <div class="form-popup" id="myForm1">
+            <form action="" class="form-container" id="btn3">
+              <h2>Admission Inquiry</h2>
+          
+              <label for="FL"><b>Full Name</b></label>
+              <input type="text" placeholder="Full Name" name="FL" required>
+          
+              <label for="MN"><b>Mobile Number</b></label>
+              <input type="number" placeholder="Mobile Number" name="MN" required><br>
+
+              <label for="Email"><b>Email</b></label>
+              <input type="email" placeholder="Email" name="Email" required><br>
+
+              <label for="adress"><b>Adress</b></label>
+              <textarea name="address" id="" cols="30" rows="10"></textarea>
+              
+              <h3 style="color: black; font-size:25px;">Current Academic Status</h3>
+              <form action="">
+                  <input type="radio" name="gender" value="male" class="sem">After 12th<br>
+                  <input type="radio" name="gender" value="female"class="sem">After Diploma<br>
+                  <input type="radio" name="gender" value="other" class="sem">After Graduation
+              </form>
+              <button type="submit" class="btn">Submit</button>
+              <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+            </form>
+            <script>
+            function openForm1() {
+              document.getElementById("myForm1").style.display = "block";
+            }
+            
+            function closeForm1() {
+              document.getElementById("myForm1").style.display = "none";
+            }
+            </script>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+  <div class="body">
+    <div class="head">
+    <div class="sol1">
+          <a href="index.html" style="text-decoration: none;color: rgb(0, 0, 0);"> <div class="navBtns">Home</div></a>
+      </div>
+      <div class="sol1">
+        <div class="navBtns" >About</div>
+        <div class="drop">
+          <a href="about/about1/about.html">About Organisation</a>
+          <a href="about/about2/index.html">Message</a>
+        </div>
+      </div>
+      <div class="sol1">
+        <div class="navBtns" >Academics</div>
+        <div class="drop">
+          <a href="academics/workshop/index.html">Workshops</a>
+          <a href="academics/ecourse/index.html">e-courses</a>
+        </div>
+      </div>
+      <div class="sol1">
+        <div class="navBtns" >Ug Program</div>
+        <div class="drop">
+          <a href="ug/CE/index.html">Computer engineering</a>
+          <a href="ug/it/index.html">information technology</a>
+        </div>
+      </div>
+      <div class="sol1">
+        <div class="navBtns" >Pg Program</div>
+        <div class="drop">
+          <a href="pg/mec/index.html">mechanical engineering</a>
+          <a href="pg/EE/index.html">electrical engineering</a>
+        </div>
+      </div>
+      <div class="sol1">
+        <div class="navBtns" >Campus</div>
+        <div class="drop">
+          <a href="campus/eve/index.html">events</a>
+          <a href="campus/media/index.html">Media coverage</a>
+        </div>
+      </div>
+      <div class="sol1">
+        <div class="navBtns" >Placement</div>
+        <div class="drop">
+          <a href="placements/cell/index.html">cell</a>
+          <a href="placements/Company/index.html">company</a>
+        </div>
+      </div>
+      <div class="sol1">
+        <div class="navBtns" >Resources</div>
+        <div class="drop">
+          <a href="resources/smart/index.html">smart classes</a>
+          <a href="resources/library/index.html">library</a>
+        </div>
+      </div>
+      <div class="sol1">
+        <a href="contact/index.html" style="text-decoration: none;color: rgb(0, 0, 0);"> <div class="navBtns">Contact us</div></a>
+      </div>
+      <div class="icon">
+        <i class="fas fa-chevron-circle-down"></i>
+      </div>
+      <script>
+        var drop = document.getElementsByClassName("drop");
+        if(window.innerWidth < 1600){
+          document.getElementsByClassName("icon")[0].style.display="block";
+          console.log("hello")
+        }
+        else{
+          document.getElementsByClassName("icon")[0].style.display="none";
+          console.log("hello");
+        }
+      </script>
+    </div>
+    <div class="sequence">
+      <marquee behavior="" direction="">AIT signed MOU with Symmetric Solutions || AIT signed MOU with STAD
+        Solution||Eleven Students of CE & IT Department placed in Devstree,
+        Synoptek, , Aimdek Technology ,ICT Infracon, Brainvire, Nirant
+        Enterprise Pvt. Ltd. and Radixweb || Two students of Sem -6 CE & IT
+        Department Won 2nd Prize in “Mined Hackathon” organised by Nirma
+        University & Binghamton University. ||One Student from EC Department
+        placed in Blazenet Ltd. || One Student from Civil Department placed in
+        Unicon Build Space India Pvt. Ltd || One Student from EE Department
+        placed in Star tele logic. ||Three Students from CE Department placed
+        in Tatvasoft. || One Student from CE Department placed in Gateway ||
+        One Student from CE Department placed in E-infochip. || Forty Eight
+        Students from various department got 10/10 SPI in Sem-8 Result (CE-15,
+        IT-08, EC-03, Civil-03 and Mech-19).|| One Student from EC Department
+        placed in Engineering Services International.
+      </marquee>
+    </div>
+    <div class="mainimg">
+      <picture>
+        <img src="pictures/animation1.jpeg" alt="default">
+        <img src="pictures/animation2.jpeg" alt="default">
+        <img src="pictures/animation3.jpeg" alt="default">
+        <img src="pictures/animation4.jpeg" alt="default">
+        <img src="pictures/animation5.jpeg" alt="default">
+        <img src="pictures/animation6.jpeg" alt="default">
+      </picture>
+    </div>
+    <div class="tbox">
+      <div class="box1">
+        <i class="fas fa-eye"></i>
+        <h3>Vision</h3>
+        <p>“To produce globally acceptable professionals by providing quality education with excellence & ethics. ”</p>
+      </div>
+      <div class="box2">
+        <i class="fas fa-rocket"></i>
+        <h3>Mission</h3>
+        <p>
+          i) To provide valuable human resources to industry and society.<br />
+          ii) To create ethically and socially responsible professionals.<br />
+          iii) To build across the institute a culture of excellence in teaching & learning.<br />
+          iv) To build inclusive, diverse, and responsible community.<br />
+        </p>
+      </div>
+    </div>
+    <div class="facilities">
+      <h3 class="facilities1">Facilities @ AIT</h3>
+      <div class="fbox">
+        <div class="fbox1">
+          <img
+            src="pictures/f1.png"
+            alt="">
+          <div class="fbox11">
+            <h4>Advanced & Hi-Tech Labs</h4>
+            <p>All the engineering departments are well equipped with modern laboratories to cater to the need of
+              training, the students as well as for industrial testing. A fully equipped workshop caters to learning
+              requirements of various categories of students.</p>
+          </div>
+        </div>
+        <div class="fbox1">
+          <img
+            src="pictures/f2.png"
+            alt="">
+          <div class="fbox11">
+            <h4>Ragging Free Campus</h4>
+            <p>Anti-Ragging Squad monitors, directs and oversees the functions and performance of the institute to
+              prevent the ragging in the institution and also to safeguard the rights of female students,faculties and
+              staff members.</p>
+          </div>
+        </div>
+        <div class="fbox1">
+          <img
+            src="pictures/f3.png"
+            alt="">
+          <div class="fbox11">
+            <h4>Well-Experienced Faculties</h4>
+            <p>The institute has an extremely well qualified and experienced faculty that make the students excel in
+              every possible scholastic and co-scholastic field.</p>
+          </div>
+        </div>
+        <div class="fbox1">
+          <img
+            src="pictures/f4.png"
+            alt="">
+          <div class="fbox11">
+            <h4>Excellent Placement</h4>
+            <p>The institute adopts modern practices of training and placement of the students in industries and world
+              of work. For this purpose, placement cell is created in every department with HOD as coordinator with two
+              faculty members.</p>
+          </div>
+          
+      </div>
+      <div class="fbox1">
+        <img
+          src="pictures/f5.png"
+          alt="">
+        <div class="fbox11">
+          <h4>Smart Class</h4>
+          <p>Smart technology-enhanced classrooms that foster opportunities for teaching and learning by integrating
+            cutting-edge technologies.</p>
+        </div>
+      </div>
+      <div class="fbox1">
+        <img
+          src="pictures/f6.png"
+          alt="">
+        <div class="fbox11">
+          <h4>Sports Facilities</h4>
+          <p>The institute encourages and provides facility for sports to the students for their overall development.
+            Students of the college have been continuously bringing pride for institute by getting ranks in their
+            participation in national and international events of sports as well as cultural events.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="threebar">
+      <div class="bar">
+        <h4>NEWS</h4>
+        <div class="newzbar">
+          <div class="news">
+            <p>AIT signed MOU with Symmetric Solutions</p>
+          </div>
+          <div class="news">
+            <p>Book Published by Dr. Mohit B.Diwan, Associate Professor and HOD- Mech. Eng. Department.</p>
+          </div>
+          <div class="news">
+            <p>Conducted Webinar on “Design the base of future technologies” on 19th April 2021 by Mech & Automobile
+              Eng. Dept. of AIT</p>
+          </div>
+          <div class="news">
+            <p>AIT signed MOU with STAD Solution</p>
+          </div>
+          <div class="news">
+            <p>Placement News: Placement Drive conducted for CE & IT Students by ICT Infracon, Brainvire, Nirant
+              Enterprise Pvt. Ltd. and Radixweb in March-2021.</p>
+          </div>
+          <div class="news">
+            <p>Placement News: Placement Drive conducted for CE & IT Students by Devstree, Synoptek, Aimdek Technology
+              and Radixweb in March-2021.</p>
+          </div>
+          <div class="news">
+            <p>One day Industrial Training program on “Upskilling of Contractor Partner of JSW” conducted on 10th March,
+              2021.</p>
+          </div>
+          <div class="news">
+            <p>Womens Day celebration</p>
+          </div>
+          <div class="news">
+            <p>Won 2nd Prize of Rs. 20,000 in “Mined Hackathon” organised by Nirma University & Binghamton University
+            </p>
+          </div>
+          <div class="news">
+            <p>Placement News : Placement Drive conducted for EC department by Blazenet Ltd, Ahmedabad on 13th Feb,
+              2021., for Civil department by Unicon Build Space India Pvt. Ltd., Ahmedabad on 14th Feb, 2021.</p>
+          </div>
+          <div class="news">
+            <p>The Budget Analysis Competition 2021 conducted on 6th February,2021</p>
+          </div>
+          <div class="news">
+            <p>National Youth Day Celebration by MBA Department on 12th Jan, 2021</p>
+          </div>
+          <div class="news">
+            <p>National Level STTP on “Machine Learning” conducted by CE & IT Department during 2nd November to 12th
+              November, 2020</p>
+          </div>
+          <div class="news">
+            <p>Placement News: Placement Drive conducted for EC, EE, Civil & Mech Students by Cinif Technology on 2nd
+              October,2020 and Engineering Services Internationals on 26th October,2020.</p>
+          </div>
+          <div class="news">
+            <p>Placement News: Placement Drive conducted for CE & IT Students by Tatvasoft on 9th September,2020 and
+              Gateway group of companies on 10th September,2020</p>
+          </div>
+          <div class="news">
+            <p>Placement News: Placement Drive conducted for CE, IT & EC Students by einfochip on 26th August,2020.</p>
+          </div>
+          <div class="news">
+            <p>Webinar Conducted on “How to Start a Start up by Dr. Vivek Bindra on 15th August-2020 for AIT Students.
+            </p>
+          </div>
+          <div class="news">
+            <p>Webinar on “Iron Deficiency Anaemia”</p>
+          </div>
+          <div class="news">
+            <p>AICTE-Energy Swaraj Foundation in association with AIT is conducted Energy Literacy Drive certification
+              program for AIT Students in August-2020.</p>
+          </div>
+          <div class="news">
+            <p>Guidelines regarding Online Multiple Choice Questions (MCQ) type Summe</p>
+          </div>
+          <div class="news">
+            <p>End Semester Examination: End Semester Examination for final semester</p>
+          </div>
+        </div>
+      </div>
+      <div class="bar">
+        <h4>Circular</h4>
+        <div class="newzbar">
+          <div class="news">
+            <p>Registration for Webinar on Design the base of future Technologies</p>
+          </div>
+          <div class="news">
+            <p>Registration for Webinar on Software Testing (QA)
+            </p>
+          </div>
+          <div class="news">
+            <p>Marks Viewing for students of B.E Sem-1 to 4 (Reg and Rem)</p>
+          </div>
+          <div class="news">
+            <p>
+              Marks Viewing for students of B.E Sem-5 to 8 (Reg and Rem)</p>
+          </div>
+          <div class="news">
+            <p>Commencement of Examination for Semester-5 and 7 from 19th January-2021.</p>
+          </div>
+          <div class="news">
+            <p>Admission are invited in Vacant Quota for Engineering(including D2D Students) and Master of Engineering.
+            </p>
+          </div>
+          <div class="news">
+            <p>Admission are invited in Management Quota for Engineering,M.B.A and Master of Engineering.</p>
+          </div>
+          <div class="news">
+            <p>Commencement of Online Classes for Semester-3, 5 and 7 from 21st June-2020.
+            </p>
+          </div>
+          <div class="news">
+            <p>Circular - College close till 29 March due to coronavirus
+            </p>
+          </div>
+          <div class="news">
+            <p>Sports Days - 2020 | Ahmedabad Institute Of Technology
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bar">
+        <h4>Event</h4>
+        <div class="newzbar">
+          <div class="news">
+            <p>TechnoSparx</p>
+          </div>
+          <div class="news">
+            <p>Cultural Fest</p>
+          </div>
+          <div class="news">
+            <p>Navratri</p>
+          </div>
+          <div class="news">
+            <p>walkathon on De-addiction</p>
+          </div>
+          <div class="news">
+            <p>Kite Festival</p>
+          </div>
+          <div class="news">
+            <p>AIT Sports</p>
+          </div>
+          <div class="news">
+            <p>Yoga Day Celebration</p>
+          </div>
+          <div class="news">
+            <p>Tree Plantation</p>
+          </div>
+          <div class="news">
+            <p>Blood Donation</p>
+          </div>
+          <div class="news">
+            <p>Vasant Panchmi Celebration - Saraswati Vandana</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonal">
+      <h2>TESTIMONIALS</h2>
+      <div class="testinomials">
+        <div class="testi1">
+          <div class="img">
+            <img src="pictures/test1.jpeg" alt="">
+          </div>
+          <div class="caption">
+            <h3>Prachi Patel</h3>
+            <p>(Computer Engineering)</p>
+            <h5>Own project</h5>
+            <p class="bigp">As we all know college is not just another step towards our education in our lives but also a most beautiful and an important part of life. As it comes with lots and lots of opportunities and practical knowledge not only in studies but also in competitions and co-curricular activities. AIT was the same for me as mentioned above and it even gave me more than expected. Teachers, HODs and Principal all were and are very helpful in all ways whether you want to do mischievous things or at the same time obviously studious things. They helped me at every step and they were, for all, just a call or meet away. You just need to interact with them thats it. Lastly I want to thank AIT for providing all.</p>
+          </div>
+        </div>
+        <div class="testi1">
+          <div class="img">
+            <img src="pictures/test2.jpeg" alt="">
+          </div>
+          <div class="caption">
+            <h3>Prachi Patel</h3>
+            <p>(Computer Engineering)</p>
+            <h5>Own project</h5>
+            <p class="bigp">As we all know college is not just another step towards our education in our lives but also a most beautiful and an important part of life. As it comes with lots and lots of opportunities and practical knowledge not only in studies but also in competitions and co-curricular activities. AIT was the same for me as mentioned above and it even gave me more than expected. Teachers, HODs and Principal all were and are very helpful in all ways whether you want to do mischievous things or at the same time obviously studious things. They helped me at every step and they were, for all, just a call or meet away. You just need to interact with them thats it. Lastly I want to thank AIT for providing all.</p>
+          </div>
+        </div>
+        <div class="testi1">
+          <div class="img">
+            <img src="pictures/test3.jpeg" alt="">
+          </div>
+          <div class="caption">
+            <h3>Prachi Patel</h3>
+            <p>(Computer Engineering)</p>
+            <h5>Own project</h5>
+            <p class="bigp">As we all know college is not just another step towards our education in our lives but also a most beautiful and an important part of life. As it comes with lots and lots of opportunities and practical knowledge not only in studies but also in competitions and co-curricular activities. AIT was the same for me as mentioned above and it even gave me more than expected. Teachers, HODs and Principal all were and are very helpful in all ways whether you want to do mischievous things or at the same time obviously studious things. They helped me at every step and they were, for all, just a call or meet away. You just need to interact with them thats it. Lastly I want to thank AIT for providing all.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="cont3">
+        <div class="reachus">
+          <h3>REACH US :<i class="fas fa-level-down-alt"></i></h3>
+          <div class="loc1">
+            <div class="map">
+             <a href="https://www.google.com/maps/place/Ahmedabad+Institute+of+Technology/@23.1110974,72.5190591,17z/data=!3m1!4b1!4m5!3m4!1s0x395e82d324d1558f:0x359cebcfc4ad365e!8m2!3d23.1110974!4d72.5212478">
+              <i class="fas fa-map-marker-alt">
+                <span class="tooltiptext">Location</span>
+              </i>
+             </a>
+            </div>
+            <div class="map">
+              <a href="">
+                <i class="fas fa-phone-square-alt">
+                  <span class="tooltiptext">+91-9225225292</span>
+                </i>
+              </a>
+            </div> 
+            <div class="map">
+              <a href="mailto:info@aitindia.in">
+                <i class="fas fa-envelope-open">
+                  <span class="tooltiptext">info@aitindia.in</span>
+                </i>
+              </a>
+            </div> 
+            <div class="map">
+              <a href="mailto:admission@aitindia.in">
+                <i class="fas fa-envelope">
+                  <span class="tooltiptext">admission@aitindia.in</span>
+                </i>
+              </a>
+            </div> 
+            
+          </div>
+        </div>
+        <div class="facebook">
+          <a href="https://www.facebook.com/aitcollege2004" id="fb">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="https://www.facebook.com/aitcollege2004" id="tweet">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
+        <div class="reachus">
+          <h3>Contact US :<i class="fas fa-level-down-alt"></i></h3>
+          <div class="loc1">
+            <div class="map">
+              <a href="">
+                <i class="fas fa-phone-square-alt">
+                  <p class="textphone">(For Placement)</p>
+                  <span class="tooltiptext">+91-9225225292</span>
+                </i>
+              </a>
+            </div>
+            <div class="map">
+              <a href="">
+                <i class="fas fa-phone-square-alt">
+                  <p class="textphone">(For Admission Inquiry)</p>
+                  <span class="tooltiptext">+91-9225225292</span>
+                </i>
+              </a>
+            </div>
+            <div class="map">
+              <a href="">
+                <i class="fas fa-phone-square-alt">
+                  <p class="textphone">(For General information)</p>
+                  <span class="tooltiptext">+91-9225225292</span>
+                </i>
+              </a>
+            </div>
+            <div class="map">
+              <a href="">
+                <i class="fas fa-phone-square-alt">
+                  <p class="textphone">(For General information)</p>
+                  <span class="tooltiptext">+91-9225225292</span>
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rights">
+        <p>Copyright ©2021 All rights reserved with by Ahmedabad Institute of Technology</p>
+      </div>
+      <div class="devloper">
+        <p>Developed by : 180020107046<a href="https://www.instagram.com/stellar_prachi/">Prachi Patel</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

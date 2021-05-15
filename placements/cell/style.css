@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainname {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 35px;
+  color: chocolate;
+}
+.mainb{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.box{
+    padding: 20px 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.521);
+    margin: 100px 0;
+    border-radius: 15px;
+}
+.box h3{
+    color: chocolate;
+    display: block;
+    font-size: 30px;
+    margin: 15px 0;
+}
+.box a{
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+    font-size: 25px;
+    float: right;
+    display: block;
+}
+.box ul li{
+    list-style: circle;
+    font-size: 25px;
+    margin: 10px 0;
+}
+.fot{
+    padding: 20px 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.521);
+    border-radius: 15px;
+    margin: 50px 0;
+}
+.fot h3{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0;
+}
+.fobox{
+    padding: 20px 40px;
+    border: 2px solid black;
+}
+.fobox h4{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: chocolate;
+    margin: 10px 0;
+}
+.cap{
+    font-size: 20px;  
+    margin: 10px 0;  
+    border-bottom: 2px solid rgba(0, 0, 0, 0.459);
+}
+.under p{
+    margin: 10px 0;
+    font-size: 20px;
+}
+.under p i{
+    font-size: 25px;
+    color: chocolate;
+    margin: 0 20px 0 0;
+}
