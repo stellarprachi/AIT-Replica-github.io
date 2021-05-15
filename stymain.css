@@ -1,0 +1,792 @@
+@import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.leftfixed {
+  position: absolute;
+  top: 295px;
+  z-index: 10;
+}
+.img1 {
+  display: flex;
+  align-items: center;
+}
+.img1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 0% 50px 50px 0;
+  transition: 0.3s;
+}
+.img1 i {
+  font-size: 25px;
+  color: white;
+}
+.img1 p {
+  right: 20px;
+  position: absolute;
+  font-size: 25px;
+  color: white;
+  visibility: hidden;
+  white-space: nowrap;
+}
+.img1:hover {
+  padding-left: 120px;
+}
+.img1:hover p {
+  visibility: visible;
+}
+.img1:hover i {
+  visibility: hidden;
+}
+#lfi1 {
+  background-color: #28a745;
+  cursor: pointer;
+  
+}
+#lfi2 {
+  background-color: #f5a400;
+  cursor: pointer;
+  top: 45px;
+  margin: 0 0 0 0;
+}
+#lfi3 {
+  background-color: #c72814;
+  cursor: pointer;
+  top: 90px;
+}
+#lfi4 {
+  background-color: #3693d1;
+  cursor: pointer;
+  top: 135px;
+}
+.header {
+  padding: 0 5vw 0 0;
+  display: flex;
+  justify-content: flex-start;
+  height: 150px;
+  background-color: #0d1128;
+  width: auto;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.aitLogo img {
+  margin: 0 2.5vw;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1px #0d1128;
+  width: 150px;
+  height: 150px;
+}
+.rightcont {
+  padding: 5px;
+  flex-grow: 1;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 15px 0;
+  line-height: 50px;
+  font-size: 2.4vw;
+  color: #fff894f6;
+  font-family: "Vast Shadow", cursive;
+}
+
+.group1 {
+  display: flex;
+  float: right;
+  align-items: center;
+  width: auto;
+  flex-wrap: wrap;
+}
+.group1Ele {
+  margin: 0 5vw 10px 0;
+  color: #e6df89d0;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.btn {
+  padding: 10px 20px;
+  border-style: none;
+  background-color: transparent;
+  color: #e6df89d0;
+  font-size: 18px;
+  border: 2px solid white;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.btn:hover {
+  background-color: #e6df89d0;
+  color: #0d1128;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  -webkit-animation-name: fadeIn; 
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+.modal-content {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fefefe;
+  width: 50%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-size: 20px;
+  padding: 20px 16px;
+  background-color: #b85c5c;
+  color: white;
+  text-align: center;
+}
+
+.modal-body {
+  padding: 20px 16px;
+  background-color: rgba(0, 0, 0, 0.582);
+}
+.modal-body p{
+  font-size: 25px;
+  color: white;
+}
+.sem{
+  margin: 15px 10px;
+}
+form{
+  color: white;
+  font-size: 25px;
+  margin: 0 10px;
+}
+.sem{
+  width: 20px;
+  height: 20px;
+}
+
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.form-popup {
+  right: 10%;
+  display: none;
+  position: absolute;
+  border: 3px solid #f1f1f1;
+  background-color: white;
+  z-index: 19;
+  padding:0 20px 0 0 ;
+  transition: 0.5s;
+  box-shadow: 0 0 12px black;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container h2{
+  color: #000;
+  text-align: center;
+}
+.form-container label{
+  color: black;
+}
+form{
+  color: #000;
+}
+
+.form-container input[type=text], .form-container input[type=email]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  font-size: 18px;
+}
+.form-container textarea, .form-container input[type="number"]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  font-size: 18px;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus .form-container textarea:focus{
+  background-color: #ddd;
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+
+.form-container .btn{
+  background-color: chocolate;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .cancel{
+  background-color: black;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+  color: white;
+}
+@media only screen and (max-width:1200px) {
+  h1 {
+    display: none;
+  }
+  .group1{
+    margin: 25px 0;
+  }
+}
+
+.sequence {
+  margin: 20px 20%;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: red;
+}
+.head{
+  background-color: #e6de8942;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 5%;
+  height: 85px;
+  overflow: hidden;
+  transition:0.5s;
+}
+.head:hover{
+  height: auto;
+}
+.icon{
+  position: absolute;
+  right: 3vw;
+  color: chocolate;
+  font-size: 30px;
+  transition: 0.4s;
+}
+.head:hover .icon{
+  display: none;
+}
+.sol1{
+  transition: 1s;
+  flex-grow: 1;
+  text-align: center;
+  width: 200px;
+  border-radius: 15px;
+}
+.sol1 .navBtns{
+  padding: 15px;
+  line-height: 50px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 5;
+}
+.sol1:hover{
+  flex-grow: 2;
+  background-color: #fd6001;
+  border: 2px solid rgba(0, 0, 0, 0.096);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.356);
+}
+.sol1:hover .navBtns{
+  color: white;
+}
+.sol1:hover .drop{
+  visibility: visible;
+}
+.drop{
+  visibility: hidden;
+  position: absolute;
+  z-index: 15;
+  width: 15em;
+  background-color: white;
+  border-radius: 15px;
+  transform: translateX(0%);
+}
+.drop a{
+  text-align: center;
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #ff73006e;
+  border-radius: 15px;
+}
+.drop a:hover{
+  background-color: #0d1128;
+  color: white;
+}
+.mainimg {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-grow: 2;
+  height: 40vw;
+  width: 70vw;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.678);
+  border-radius: 5px;
+  
+}
+picture img{
+  width: 100%;
+  animation: slidedown 15s infinite alternate;
+  flex-shrink: inherit;
+  margin: 2.5px 0;
+}
+@keyframes slidedown{
+  0%{
+    transform:translatey(0px);
+  }
+  20%{
+    transform: translateY(-100%);
+  }
+  40%{
+    transform: translateY(-200%);
+  }
+  60%{
+    transform: translateY(-300%);
+  }
+  80%{
+    transform: translateY(-400%);
+  }
+  100%{
+    transform: translateY(-500%);
+  }
+}
+.tbox {
+  display: flex;
+}
+.box1 {
+  text-align: center;
+  width: 100%;
+  background-color: #fd6001;
+  padding: 15px; 
+  flex-grow: 2;
+
+}
+.box1 h3 {
+  color: white;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+.box1 i {
+  margin: 20px 0;
+  color: white;
+  font-size: 40px;
+}
+.box1 p {
+  color: white;
+  text-align: left;
+  margin: 20px 10vw;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.box2 {
+  text-align: center;
+  width: 100%;
+  background-color: #100230;
+  padding: 15px;
+  flex-grow: 2;
+}
+.box2 h3 {
+  margin: 0 0 10px 0;
+  color: white;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+.box2 i {
+  margin: 10px 0;
+  color: white;
+  font-size: 40px;
+}
+.box2 p {
+  text-align: left;
+  margin: 30px 10vw;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+@media only screen and (max-width:1200px) {
+  .tbox{
+    flex-wrap: wrap;
+  }
+}
+.facilities {
+  margin: 40px auto;
+  width: 90vw;
+  font-family: "Roboto", sans-serif;
+}
+.facilities h3 {
+  text-align: center;
+  font-size: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.267);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.151);
+  cursor: pointer;
+  background-color: #50cf457a;
+  transition: 0.5s;
+  box-shadow: 0 0 12px rgb(41, 1, 41);
+}
+.facilities h3:hover {
+  background-color: #198315e1;
+  color: white;
+}
+.fbox {
+  display: flex;
+  margin: 35px 0;
+  flex-wrap: wrap;
+}
+.fbox1 {
+  padding: 25px;
+  border: 5px solid rgba(0, 0, 0, 0.171);
+  text-align: left;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  flex-grow: 1;
+  margin: 10px;
+  transition: 0.5s;
+  box-shadow: 0 0 12px rgb(36, 3, 36);
+  background-color: #f7ea3348;
+}
+.fbox1:hover {
+  background-color: #fd6001;
+  color: white;
+  border: 5px solid rgba(43, 43, 43, 0.322);
+}
+.fbox1 img {
+  width: 75px;
+  height: 75px;
+  margin: 0 16px 0 0;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #100230;
+}
+.fbox1 h4 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+.fbox1 p {
+  font-size: 18px;
+}
+.threebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 7%;
+}
+.bar {
+  width: 650px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow-y: scroll;
+  box-shadow: 0 0 13px black;
+  margin: 10px;
+}
+.bar h4 {
+  text-align: center;
+  font-size: 30px;
+  color: chocolate;
+}
+.newzbar {
+  overflow: hidden;
+  background-color: rgb(34, 2, 34);
+}
+.newzbar .news {
+  padding: 5px;
+  margin: 10px 0;
+  font-family: "New Tegomin", serif;
+}
+.newzbar .news p {
+  background-color: rgba(0, 0, 0, 0.226);
+  color: white;
+  padding: 5px 10px;
+  text-indent: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 20px;
+  box-shadow: inset 0 0 12px rgb(255, 255, 255);
+}
+.newzbar .news p:hover {
+  box-shadow: 0 0 12px rgb(255, 255, 255);
+  background-color: rgb(255, 106, 0);
+}
+.bar::-webkit-scrollbar {
+  width: 15px;
+}
+.bar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #7a7a7a;
+  border-radius: 5px;
+}
+.bar::-webkit-scrollbar-thumb {
+  background: chocolate;
+  border-radius: 5px;
+}
+.bar::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 106, 0);
+}
+.testimonal h2{
+  color: rgb(44, 3, 44);
+  background-color: #50cf457a;
+  padding: 15px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 20px 10%;
+  box-shadow: 0 0 10px rgba(5, 5, 5, 0.404);
+  border: 3px solid rgba(63, 63, 63, 0.295);
+  transition: 0.5s;
+}
+.testimonal h2:hover{
+  background-color: #198315e1;
+  color: white;
+}
+.testinomials{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 7%;
+}
+.testi1{
+  width: 320px;
+  height: 330px;
+  border: 2px solid rgba(0, 0, 0, 0.432);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 13px black;
+  margin: 10px;
+}
+.testi1 .img{
+  width: 300px;
+
+  height: 100%;
+  transition: 0.8s;
+  z-index: 20;
+}
+.testi1 .img img{
+  height: 100%;
+}
+.testi1:hover .img{
+  opacity: 0;
+  height: 0;
+}
+.testi1 .caption{
+  margin: 8px auto;
+  text-align: center;
+  border: 5px solid rgb(255, 115, 0);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.349),
+  inset 0 0 12px rgb(255, 255, 255);
+}
+.testi1 .caption h3 , p ,h4{
+  font-family: 'Krona One', sans-serif;
+}
+.testi1 .caption h3{
+  font-size: 17px;
+}
+.testi1 .caption p{
+  font-size: 13px;
+}
+.testi1 .caption h5{
+  font-size: 12px;
+}
+.testi1 .caption .bigp{
+  margin: 15px 0;
+  text-align: justify;
+  text-indent: 25px;
+}
+.footer{
+  padding-top: 40px;
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+  z-index: 15;
+  overflow: hidden;
+}
+.cont3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.reachus{
+  flex-grow: 2;
+  height: 500px;
+  width: 300px;
+  text-align: center;
+  margin: 0 2.5vw;
+}
+.reachus h3{
+  color: white;
+  font-size: 25px;
+  margin: 30px 0;
+  font-family: 'Krona One', sans-serif;
+}
+.reachus h3 i{
+  margin: 0 1.5vw;
+  font-size: 20px;
+}
+.reachus .loc1{
+  padding: 20px 0;
+  border: 3px solid rgba(0, 0, 0, 0.555);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.671),
+              inset 0 0 15px rgb(248, 248, 248);
+}
+.reachus .loc1:hover{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.671),
+              inset 0 0 15px rgb(255, 136, 0);
+}
+.reachus .loc1 .map a{
+  text-decoration: none;
+  color: white;
+}
+.reachus .loc1 .map a i{
+  font-size: 25px;
+  transition: 0.5s;
+  height: 80px;
+}
+.reachus .loc1 .map a i .tooltiptext{
+  position: absolute;
+  margin: 50px 50px 50px -30px;
+  overflow: hidden;
+  transform: translate(-40%,-50%);
+  width: 240px;
+  border: 2px solid rgb(131, 73, 7);
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  visibility: hidden;
+}
+.reachus .loc1 .map a i:hover{
+  color: rgb(255, 106, 0);
+}
+.reachus .loc1 .map a i:hover .tooltiptext{
+  visibility: visible;
+  background-color: rgb(255, 106, 0);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.616);
+}
+.facebook{
+  text-align: center;
+  flex-grow: 3;
+  width: 300px;
+}
+.facebook a{
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+}
+.facebook a:hover{
+  color: rgb(0, 162, 255);
+}
+.textphone{
+  position: absolute;
+  white-space: nowrap;
+  font-size: 18px;
+  transform: translate(-40%, 120%);
+  transition: 0.5s;
+}
+.reachus .loc1 .map a i:hover .textphone{
+  visibility: hidden;
+}
+.rights{
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin: 50px 0 10px 0;
+}
+.devloper{
+  text-align: center;
+  color: white;
+  margin: 10px 0 150px 0;
+  font-size: 18px;
+}
+.devloper a{
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+.devloper a:hover{
+  color: rgb(255, 106, 0);
+}
