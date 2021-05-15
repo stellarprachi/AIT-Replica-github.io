@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+    font-size: 35px;
+    text-align: center;
+    color: chocolate;
+    margin: 20px 0;
+    border-bottom: 2px solid chocolate;
+}
+.threebox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.course .img img{
+    width: 200px;
+    height: 200px;
+}
+.course p{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+.foot{
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
+    text-align: center;
+    padding: 15px;
+}
+.foot i{
+    color: white;
+    font-size: 25px;
+    margin: 20px 0;
+}
+.foot h3{
+    font-size: 35px;
+    color: white;
+    margin: 20px 0;
+}
+.foot p{
+    color:white;
+    font-size: 20px;
+}
+#box2{
+    background-color: rgb(44, 4, 44);
+}
