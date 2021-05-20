@@ -790,3 +790,25 @@ picture img{
 .devloper a:hover{
   color: rgb(255, 106, 0);
 }
+
+
+.counter{
+  display: flex;
+  font-family: 'Krona One', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+span{
+  color: white;
+  font-weight: bold;
+  font-family: 'Krona One', sans-serif;
+}
+
+#id{
+  position: absolute;
+  padding-top: 25px;
+}
