@@ -658,6 +658,12 @@
           </div>
         </div>
       </div>
+      <div class="counter">
+
+        <span> Visitors : </span>
+        <div id="count"> 00 </div>
+        
+      </div>
       <div class="rights">
         <p>Copyright ©2021 All rights reserved with by Ahmedabad Institute of Technology</p>
       </div>
@@ -666,5 +672,19 @@
       </div>
     </div>
   </div>
+  <script>
+
+const counter = document.getElementById('count');
+
+function updatecounter(){
+  fetch('https://api.countapi.xyz/update/prahipatel/stellar/?amount=1')
+  .then(res => res.json())
+  .then(res => {
+      counter.innerHTML = res.value;
+    })
+
+}
+updatecounter(); 
+</script>
 </body>
 </html>
